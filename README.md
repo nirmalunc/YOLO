@@ -1,0 +1,1 @@
+Simply just initializes YOLO. Removed loss function implementations (but left the usage of the functions to update the model as comments [ie. "# model_baseline_boxdiff = create_model_with_custom_loss(model_type='yolov8n.pt', loss_type='baseline', box=10)"]. Can refer to this if useful when trying to update the architecture yourself. 
