@@ -10,6 +10,8 @@ from pathlib import Path
 import torch
 import torch.nn as nn
 
+
+
 from ultralytics.nn.autobackend import check_class_names
 from ultralytics.nn.modules import (
     AIFI,
@@ -72,6 +74,7 @@ from ultralytics.nn.modules import (
     GetItem,
     WeightedAdd,
     DWConv,
+    simam_module
 )
 from ultralytics.utils import DEFAULT_CFG_DICT, DEFAULT_CFG_KEYS, LOGGER, colorstr, emojis, yaml_load
 from ultralytics.utils.checks import check_requirements, check_suffix, check_yaml
