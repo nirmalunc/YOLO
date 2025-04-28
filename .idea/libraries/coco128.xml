@@ -1,0 +1,9 @@
+<component name="libraryTable">
+  <library name="coco128">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/ultralytics/datasets/coco128.zip!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>
