@@ -1,10 +1,16 @@
 from ultralytics import YOLO
 
 import torch
-print(torch.cuda.is_available())
-print(torch.cuda.device_count())
-print(torch.cuda.get_device_name(0))
+import os
 
-model = YOLO('yolov8_bifpn.yaml')
+def main():
+    print(torch.cuda.is_available())
+    print(torch.cuda.device_count())
+    print(torch.cuda.get_device_name(0))
 
-results = model.train(data="datasets/coco.yaml", epochs=25, imgsz=640, device=0, batch=0.9, workers=16)
+    model = YOLO('yolov8_simam.yaml')
+
+    results = model.train(data="datasets/coco.yaml", epochs=40, imgsz=640, device=0, batch=32, workers=8)
+
+if __name__ == "__main__":
+    main()

@@ -105,8 +105,10 @@ from .bifpn import BiFPN
 from .getitem import GetItem
 from .weightedAdd import WeightedAdd
 from .dwConv import DWConv
+from .simam import SimAM
 
 __all__ = (
+    "SimAM",
     "Conv",
     "Conv2",
     "LightConv",

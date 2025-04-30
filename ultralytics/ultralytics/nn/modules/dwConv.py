@@ -8,6 +8,7 @@ class DWConv(nn.Module):
     """
     def __init__(self, c1, c2, k=3, s=1):      # c1 = input, c2 = output
         super().__init__()
+        print(f"[DEBUG] DWConv in_channels={c1}, out_channels={c2}")
         assert c1 == c2, "BiFPN DWConv expects same in/out channels"
         p = k // 2
         self.dw = nn.Conv2d(c1, c1, k, s, p, groups=c1, bias=False)
